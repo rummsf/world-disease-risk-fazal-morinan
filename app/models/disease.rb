@@ -6,23 +6,23 @@ class Disease < ActiveRecord::Base
   end
 
   def print_symptom
-    puts "Symptoms: #{self.symptoms}"
+    printf Format::SPACER, "Symptoms:", "#{self.symptoms}"
   end
 
   def print_transmission
-    puts "Transmission of the disease: #{self.transmission}"
+    printf Format::SPACER, "Transmission of the disease:", "#{self.transmission}"
   end
 
   def print_diagnosis
-    puts "Diagnosis: #{self.diagnosis}"
+    printf Format::SPACER, "Diagnosis:", "#{self.diagnosis}"
   end
 
   def print_treatment
-    puts "Treatment options: #{self.treatment}"
+    printf Format::SPACER, "Treatment options:", "#{self.treatment}"
   end
 
   def print_prevention
-    puts "Preventative measures: #{self.prevention}"
+    printf Format::SPACER, "Preventative measures:", "#{self.prevention}"
   end
 
 end
