@@ -1,7 +1,7 @@
-class CreateCountries < ActiveRecord::Migration
+class CreateCountries < ActiveRecord::Migration[4.2]
 
   def change
-    create_table countries do |t|
+    create_table :countries do |t|
       t.string :name
       t.string :location
       t.integer :area
@@ -10,5 +10,5 @@ class CreateCountries < ActiveRecord::Migration
       t.float :life_expectancy_at_birth
       t.float :infant_mortality_rate
   end
-
+end
 end

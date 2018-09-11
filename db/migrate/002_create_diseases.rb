@@ -1,7 +1,7 @@
-class CreateDiseases < ActiveRecord::Migration
+class CreateDiseases < ActiveRecord::Migration[4.2]
 
   def change
-    create_table diseases do |t|
+    create_table :diseases do |t|
       t.string :name
       t.string :description
       t.string :symptoms
@@ -11,6 +11,7 @@ class CreateDiseases < ActiveRecord::Migration
       t.string :diagnosis
       t.string :treatment
       t.string :prevention
+      t.string :more
   end
-
+end
 end

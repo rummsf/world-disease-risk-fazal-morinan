@@ -2,6 +2,7 @@ require 'bundler/setup'
 require 'sqlite3'
 require 'json'
 require 'pry'
+require 'rest-client'
 
 Bundler.require
 
