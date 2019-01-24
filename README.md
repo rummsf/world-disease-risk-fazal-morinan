@@ -1,3 +1,3 @@
-# Paired project with CnMorinan
+# Paired project with CiaranMn
 
-An app to show information on countries and diseases, and the prevalence of disease across the world.
+A Ruby research tool for the pharmaceutical industry.  A command line app allowing analysis of the global presence of diseases.
